@@ -4,8 +4,6 @@ public class Tester{
     double y1 = Double.parseDouble(args[1]);
     double x2 = Double.parseDouble(args[2]);
     double y2 = Double.parseDouble(args[3]);
-    // double x3 = Double.parseDouble(args[4]);
-    // double y3 = Double.parseDouble(args[5]);
 
     // part 2.3
     Point point1 = new Point(x1, y1);
@@ -14,18 +12,13 @@ public class Tester{
     System.out.println("The distance between points (x1,x2) and (y1,y2) is " + point1.distanceTo(point2));
     System.out.println("The points (x1,x2) and (y1,y2) are equal? " + point1.equals(point2));
 
+    // part 2.4
+    double x3 = Double.parseDouble(args[4]);
+    double y3 = Double.parseDouble(args[5]);
 
-    // part 3
-    // String c = Triangles.classify(x1,y1,x2,y2,x3,y3);
-    // System.out.println("The triangle type is " + c);
-    //
-    // // part4
-    // double p = Triangles.perimeter(x1,y1,x2,y2,x3,y3);
-    // System.out.println("The perimeter of this triangle is " + p);
-    //
-    // // part5
-    // double a = Triangles.area(x1,y1,x2,y2,x3,y3);
-    // System.out.println("The triangle type is " + c + " and the area of this triangle is " + a);
+    Point point3 = new Point(x3, y3);
+    Triangle a = new Triangle(point1, point2, point3);
+    System.out.println("The perimeter of this triangle is " + a.getPerimeter());
     }
 
 }
