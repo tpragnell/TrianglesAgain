@@ -19,6 +19,8 @@ public class Tester{
     Point point3 = new Point(x3, y3);
     Triangle a = new Triangle(point1, point2, point3);
     System.out.println("The perimeter of this triangle is " + a.getPerimeter());
+
+    System.out.println("The area of this triangle is " + a.getArea());
     }
 
 }

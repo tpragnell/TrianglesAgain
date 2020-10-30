@@ -20,5 +20,10 @@ public class Triangle{
      return d12 + d13 + d23;
    }
 
+   public double getArea(){
+     double a = Math.abs((v1.getX() * (v2.getY()-v3.getY()) + v2.getX() * (v3.getY()-v1.getY()) + v3.getX() * (v1.getY()-v2.getX())) / 2) ;
+     return a;
+   }
+
 
 }
