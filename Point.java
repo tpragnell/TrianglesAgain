@@ -2,15 +2,15 @@ public class Point{
   private double x,y;
 
  //construct a point given coordinates
-  public Point(double X, double Y){
-   x=X;
-   y=Y;
+  public Point(double _x, double _y){
+   this.x= _x;
+   this.y= _y;
   }
 
   //construct a point given a point  (redundant , just provides flexibility)
-  public Point(Point p){
-   x= p.x;  //private access in the same file is allowed!
-   y= p.y;
+  public Point(Point _p){
+   this.x= _p.x;  //private access in the same file is allowed!
+   this.y= _p.y;
   }
 
   public double getX(){
@@ -21,15 +21,14 @@ public class Point{
    return y;
   }
 
-  public static double distanceTo(double x1, double y1, double x2, double y2){
-    double d = Math.sqrt( Math.pow((x2-x1), 2) + Math.pow((y2-y1), 2));
+  // part 2.3
+  public double distanceTo(Point _other){
+    double d = Math.sqrt( Math.pow((_other.x-this.x), 2) + Math.pow((_other.y-this.y), 2));
     return d;
     }
 
-
-
-  public static boolean equals(double x1, double y1, double x2, double y2){
-    return(x1 == x2 && y1 == y2);
+  public boolean equals(Point _other){
+    return(this.x == _other.x && this.y == _other.y);
   }
 
 }

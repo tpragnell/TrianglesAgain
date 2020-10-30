@@ -7,12 +7,12 @@ public class Tester{
     // double x3 = Double.parseDouble(args[4]);
     // double y3 = Double.parseDouble(args[5]);
 
-    // part 2.2
-    double d = Point.distanceTo(x1, y1, x2, y2);
-    System.out.println("The distance between points (x1,x2) and (y1,y2) is " + d);
+    // part 2.3
+    Point point1 = new Point(x1, y1);
+    Point point2 = new Point(x2, y2);
 
-    boolean a = Point.equals(x1, y1, x2, y2);
-    System.out.println("The points (x1,x2) and (y1,y2) are equal? " + a);
+    System.out.println("The distance between points (x1,x2) and (y1,y2) is " + point1.distanceTo(point2));
+    System.out.println("The points (x1,x2) and (y1,y2) are equal? " + point1.equals(point2));
 
 
     // part 3
