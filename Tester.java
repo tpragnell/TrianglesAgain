@@ -7,9 +7,13 @@ public class Tester{
     // double x3 = Double.parseDouble(args[4]);
     // double y3 = Double.parseDouble(args[5]);
 
-    // part2
+    // part 2.2
     double d = Point.distanceTo(x1, y1, x2, y2);
     System.out.println("The distance between points (x1,x2) and (y1,y2) is " + d);
+
+    boolean a = Point.equals(x1, y1, x2, y2);
+    System.out.println("The points (x1,x2) and (y1,y2) are equal? " + a);
+
 
     // part 3
     // String c = Triangles.classify(x1,y1,x2,y2,x3,y3);
