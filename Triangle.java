@@ -46,9 +46,9 @@ public class Triangle{
    public void setVertex(int _index, Point _newP){
      if(_index == 0)
        this.v1 = _newP;
-     if(_index == 1)
+     else if(_index == 1)
        this.v2 = _newP;
-     if(_index == 2)
+     else if (_index == 2)
        this.v3 = _newP;
    }
 
