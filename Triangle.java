@@ -25,5 +25,17 @@ public class Triangle{
      return a;
    }
 
+   public String classify(){
+     double d12= v1.distanceTo(v2);
+     double d13= v1.distanceTo(v3);
+     double d23= v2.distanceTo(v3);
+     //debugging
+     //System.out.println(d12+" "+d13+" "+d23);
+     if( (Math.abs(d12 - d13) < 0.001) && (Math.abs(d23 - d13) < 0.001))
+       return "equilateral";
+       if(d12 == d13 || d23 == d13 || d12 == d23)
+         return "isosceles";
+     return "scalene";
+   }
 
 }

@@ -21,6 +21,9 @@ public class Tester{
     System.out.println("The perimeter of this triangle is " + a.getPerimeter());
 
     System.out.println("The area of this triangle is " + a.getArea());
+
+    System.out.println("This triangle is " + a.classify());
+
     }
 
 }
