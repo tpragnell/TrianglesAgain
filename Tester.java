@@ -24,6 +24,8 @@ public class Tester{
 
     System.out.println("This triangle is " + a.classify());
 
+    System.out.println("This triangle toString is " + a.toString());
+
     }
 
 }

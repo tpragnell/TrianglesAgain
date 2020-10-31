@@ -31,4 +31,8 @@ public class Point{
     return(this.x == _other.x && this.y == _other.y);
   }
 
+  public String toString(){
+    return("(" + String.valueOf(this.x) + ", " + String.valueOf(this.y) + ")");
+  }
+
 }
