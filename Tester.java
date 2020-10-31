@@ -26,6 +26,9 @@ public class Tester{
 
     System.out.println("This triangle toString is " + a.toString());
 
+    a.setVertex(0, point2); // Point 1 & 2 should be the same after mutation
+    System.out.println("This triangle toString after mutation is " + a.toString());
+
     }
 
 }

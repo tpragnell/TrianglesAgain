@@ -1,4 +1,5 @@
 public class Triangle{
+
   private Point v1,v2,v3;
 
    public Triangle(Point _a, Point _b, Point _c){
@@ -40,6 +41,15 @@ public class Triangle{
 
    public String toString(){
      return("v1" + v1.toString() + " v2" + v2.toString() + " v3" + v3.toString());
+   }
+
+   public void setVertex(int _index, Point _newP){
+     if(_index == 0)
+       this.v1 = new Point(_newP);
+     if(_index == 1)
+       this.v2 = new Point(_newP);
+     if(_index == 2)
+       this.v3 = new Point(_newP);
    }
 
 }
