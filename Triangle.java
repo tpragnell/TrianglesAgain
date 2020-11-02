@@ -21,8 +21,16 @@ public class Triangle{
      return d12 + d13 + d23;
    }
 
+   public double semiPerimeter(){
+     double d12= v1.distanceTo(v2);
+     double d13= v1.distanceTo(v3);
+     double d23= v2.distanceTo(v3);
+     return ((d12 + d13 + d23) / 2);
+
+   }
+
    public double getArea(){
-     double a = Math.abs((v1.getX() * (v2.getY()-v3.getY()) + v2.getX() * (v3.getY()-v1.getY()) + v3.getX() * (v1.getY()-v2.getX())) / 2) ;
+     double a = (Math.sqrt(semiPerimeter() * (semiPerimeter() - v1.distanceTo(v2)) * (semiPerimeter() - v1.distanceTo(v3)) * (semiPerimeter() - v2.distanceTo(v3))));
      return a;
    }
 
